@@ -3,7 +3,7 @@ import "./App.css";
 import Countries from "./components/Countries/Countries";
 
 // Normal fetching data
-// const countriesData = fetch("https://restcountries.com/v3.1/all");
+// const countriesData = fetch("https://restcountries.com/v3.1/all").then(res => res.json());
 
 const countriesPromise = async () => {
    const res = await fetch("https://restcountries.com/v3.1/all");
